@@ -1,0 +1,62 @@
+//---------------------------------------------------------------------------
+
+#ifndef VisualH
+#define VisualH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.Dialogs.hpp>
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+	TGroupBox *GroupBox1;
+	TGroupBox *GroupBox2;
+	TButton *Add;
+	TButton *Del;
+	TButton *Srch;
+	TLabel *Lbl;
+	TEdit *Search;
+	TEdit *Department;
+	TEdit *Experience;
+	TEdit *Job;
+	TEdit *Name;
+	TLabel *Label1;
+	TLabel *Label2;
+	TLabel *Label3;
+	TRadioButton *Off;
+	TRadioButton *CertDep;
+	TRadioButton *CertExp;
+	TEdit *ShowData;
+	TLabel *Label5;
+	TButton *Show;
+	TMemo *Info;
+	TLabel *Label6;
+	TLabel *Label4;
+	TButton *Open;
+	TOpenDialog *OpenDialog1;
+	TSaveDialog *SaveDialog1;
+	TButton *Save;
+	void __fastcall ShowDataClick(TObject *Sender);
+	void __fastcall SearchClick(TObject *Sender);
+	void __fastcall AddClick(TObject *Sender);
+	void __fastcall ShowClick(TObject *Sender);
+	void __fastcall SrchClick(TObject *Sender);
+	void __fastcall DelClick(TObject *Sender);
+	void __fastcall CertDepClick(TObject *Sender);
+	void __fastcall CertExpClick(TObject *Sender);
+	void __fastcall OffClick(TObject *Sender);
+	void __fastcall OpenClick(TObject *Sender);
+	void __fastcall SaveClick(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif
